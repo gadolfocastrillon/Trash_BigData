@@ -1,0 +1,3 @@
+g++ -S nombre.cpp: Muestra como se traduce el lenguaje al ensamble
+g++ -E nombre.cpp: Muestra todo lo que se incluye en mi ejecutable y demas información
+
