@@ -1,0 +1,26 @@
+Punteros: son variables que almacenan direcciones de memoria. En otras palabras, un puntero es una variable que apunta a otra varible almacenada en memoria.
+Los punteros se utilizan comunmente en c/c++ para la asignación dinamica de memoria y la manipulación de estructura de datos complejas, como listas enlazadas y arboles. Tambien se utilizan en la implementación de funciones de bajo nivel y en la interacción con el sistema operativo y el hardware del ordenador.
+
+    - Se definen con el operador *
+    - Se inicializa con el operador new
+    - Se borran con el operador delete
+    - Se accede al valor con (*ptr)
+Los punteros también pueden ser arreglos de elementos. Para asignar el número de elementos usamos el operador []. Estos no necesitan ser liberados por delete, son memoria estatica asignada en la compilación y se libera de forma automatica.
+
+
+PERFILADORES DE MEMORIA EN C (BUSCAR)
+
+    
+ARITMETICA DE PUNTEROS:
+Esto permite a través de sumar y restar jugar con las posiciones de memoria.
+Sumar un valor n a un puntero quiere decir moverse a la "derecha" n posiciones de memoria y restar es moverse a la izquierda.
+
+ERRORES DE MANEJO DE MEMORIA:
+-Segmentation fault: cuando se trata de accder una posición de memoria no reservada.
+-Double free corruption: cuando se trata de liberar dos veces el mismo puntero.
+-No liberar memoria asignada a un puntero.
+-Pedir una cantidad de memoria que no se puede asignar.
+
+
+
+Hacer un codigo que por medio de punteros me permita ingresar la función para realizarle integrales de Riemann 
