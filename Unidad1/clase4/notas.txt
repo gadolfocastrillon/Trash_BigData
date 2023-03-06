@@ -1,0 +1,6 @@
+Programación orientada a objetos.
+
+el constructor se debe llamar igual que la clase 
+el destructor lleva ~ antes de la clase y se llama igual que la clase
+ambos no retornan nada, pero el contructor recibe parametros mientras que el destructor no.
+Tenemos ademas un puntero que apunta a las clases llamado con this para llamarme variables de la clase. 
