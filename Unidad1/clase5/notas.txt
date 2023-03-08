@@ -1,0 +1,7 @@
+Herencia - Mecanismo fundamental en la programación orientada a objetos que permite crear una nueva clase a partir de una clase existente, llamada clase base o superclase.
+Para ejecutar clases que tienen herencia necesito ejecutar el comando g++ ClaseHeredada.cpp claseMadre.cpp -I.
+
+Clases abstractas:Si yo necesito definidir una clase de la cual yo no pueda crear un objeto, tal que el otro desarrollador implemente este en el problema de él
+
+Sobrecarga de operadores:Para la sobrecarga se usa la palabra clave operator seguido del operador a sobre cargar. Parecido a una función, tengo que definir el parámetro que recibo y el valor que retorno.
+Templates: Estos templates me permiten crear codigo generico sin necesidad de especificar que tipo de dato, esto se hace para evitar suplicación del codigo, asi si tengo una clase que maneja doubles y deseo crear una que maneje int, puedo utilizar la misma clase para ambos.  
