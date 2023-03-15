@@ -1,0 +1,14 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main(){
+  vector<int>vector1={1,2,3,4};
+  vector<int>vector2={1,2,3,4};
+  vector<vector>vectorT = {vector1,vector2};
+  cout<<&vector1[0]<<endl;
+  cout<<&vector2[1]<<endl;
+  
+  
+  return 0; 
+}
