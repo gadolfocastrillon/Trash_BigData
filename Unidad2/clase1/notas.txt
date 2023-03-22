@@ -1,0 +1,56 @@
+Notas introductorias de root
+Para entrar usamos root
+Para salir usamos .q
+Para las opciones de ayuda usamos .help
+Para usar la terminal de comandos colocamos .!<OS_command> siendo <OS_command> el comando a ingresar en la terminal. Ejemplo .!ls muestra las carpetas.
+TMath::Gaus(x) llamamos a la función Gaussiana normalizada.
+Para ejecutar un vector usamos vector <int> my_vector;
+
+LA clase TF1 me permite graficar objetos en c++ se usa como:
+auto fa1 = new TF1("fa1","sin(x)/x, 0,10); 
+y para dibujarla ejecutamos
+fa1 -> Draw();
+Hasta ahora no me genera puntos, solo me genera el grafico.
+
+Para hacer graficos en el mismo canvas usamos:
+nombre -> Draw("same");
+
+Para hacer histogramas usamos:
+TH1F h1("h1","h1",100,-3,3);
+h1.FillRandom("gaus",10000);
+como h1 no es un puntero no usamos -> sino .
+h1.Draw();
+
+En la opcion tools de las graficas-> fit panel podemos hacer un fiteo de los datos, sea que fiteemos la funciones por defecto o ingresemos una función determinada, para esta función en especifico tenemos que darle en set parameters para ajustar los parametros para tener un mejor fiteo de los datos.
+
+Tarea: ponerse a fitear otra información y generar otros histogramas en el sistema.
+
+Existe algo llamado root Macros, los cuales son una especie de funciones, las cuales son con la forma:
+
+void nombre(){
+<
+     codigo
+     >
+}
+
+El nombre del archivo debe llamarse de forma igual que el nombre de la funcion
+
+Tambien se pueden definir macros sin nombre de la forma
+
+{
+<
+
+	codigo
+>
+}
+
+un macro se ejecuta normalmente como root nombreMacro.c o también de la forma
+.x MacroName.C
+
+con el comando
+root -l -q nombreMacro.C
+me ejecuta el macro de root y automaticamente me cierra root.
+
+Para ejecutar macros 
+.L geometrica_macroName.C 
+geometrica_macroName();
